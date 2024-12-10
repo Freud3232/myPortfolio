@@ -1,7 +1,7 @@
 const key = "d13c9214";
 
 const getByTitolo = async (title) => {
-    const base = `http://www.omdbapi.com/?apikey=${key}&`;
+    const base = `https://www.omdbapi.com/?apikey=${key}&`;
     const query = `t=${title}`;
 
     const response = await fetch(base + query);
