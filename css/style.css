@@ -41,7 +41,7 @@ a:hover{
     height: 70vh;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center center;
+    background-position: 70% center;
 }
 
 
@@ -176,6 +176,10 @@ p{
 
 
 @media (min-width: 992px) {
+
+    #hero{
+        background-position: center center;
+    }
 
     .welcome h1{
         font-size: 10rem;
