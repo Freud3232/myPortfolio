@@ -151,9 +151,8 @@ p{
 /*                                RICERCA FILM                                */
 /* -------------------------------------------------------------------------- */
 .film-trovato img{
-    height: 600px;
+    height: auto;
     max-width: 90vw;
-    
 }
 
 
