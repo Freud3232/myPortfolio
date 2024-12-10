@@ -1,0 +1,24 @@
+realizzare l'home page del sito di un cinema. Questa deve contenere: 
+                - un menu di navigazione responsive
+                - un carosello (NO BOOTSTRAP) che riporti le informazioni di un film in ogni scheda (3  film)
+                        - titolo
+                        - locandina
+                        - primi tre attori
+                        - durata
+                        - anno 
+                        - generi
+                - il carosello deve avere un bottone prev e uno next indicati da icone e non parole che fanno scorrere l'array dei film scelti, presentandone uno alla volta. I film devono potersi ripetere sempre nello stesso ordine. 
+
+                -una sezione di ricerca con un campo di input dentro il quale è possibile scrivere il nome di un film e ottenere titolo e locandina. 
+
+                - utilizzare omdbAPI: 
+                 chiave: d13c9214
+                 http://www.omdbapi.com/?apikey=[yourkey]&
+
+
+        L'aspetto deve essere curato!!!
+
+        Uso di bootstrap facoltativo
+
+        --OPZIONALE--
+        Il titolo del film e i nomi degli attori devono diventare dei link alla pagina corrispondente di wikipedia.

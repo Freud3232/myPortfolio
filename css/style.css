@@ -1,0 +1,240 @@
+body{
+    background-color: transparent;
+}
+
+hr{
+    border: none;
+    border-top: 3px dotted #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #81b7e4;
+    transition: all .2s;
+}
+
+/* 
+    ::after e ::before sono pseudo element https://www.w3schools.com/cssref/sel_after.php 
+    che permettono di mettere qualcosa prima o dopo tutti gli elementi di un certo tipo.
+*/
+/* a::after{
+    content: "-";
+    margin-left: 0.5rem;
+} */
+
+a:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+#logo{
+    width: 5rem;
+}
+
+#hero {
+    position: relative;
+    height: 70vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.welcome h1{
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(to right, rgb(143,35,35), #eb7639);
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+    
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.welcome{
+    position: absolute;
+    color: black;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+p{
+    letter-spacing: 1px;
+}
+
+.carosello{
+    height:auto;
+    width: 400px;
+    border: 0px solid #eb7639;
+    position: relative;
+
+}
+
+.descrizione{
+    display: block;
+    margin-top: 2rem;
+    padding: 0 40px;
+}
+
+.carosello img {
+    height: 400px;
+}
+
+.sezione-carosello{
+    background: rgb(255,158,2);
+    background: radial-gradient(circle, rgba(255,158,2,1) 0%, rgb(90, 21, 21) 50%);
+    padding: 2rem;
+}
+
+.prev{
+    position: absolute;
+    width: 45px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: all .2s;
+    filter: invert(1) brightness(2);
+}
+
+
+.next{
+    position: absolute;
+    width: 45px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all .2s;
+    filter: invert(1) brightness(2);
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(128, 128, 128, 0.144);
+
+}
+
+.descrizione-lista li{
+    list-style: none;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.descrizione-lista{
+    margin: 0;
+    padding: 0;
+}
+
+.ricerca{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.barra-inserimento{
+    border: 2px solid #eb7639;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                RICERCA FILM                                */
+/* -------------------------------------------------------------------------- */
+.film-trovato img{
+    height: 600px;
+    
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                DETTAGLI FILM                               */
+/* -------------------------------------------------------------------------- */
+
+.description h1{
+   font-size: 6rem;
+   background: linear-gradient(to right, rgb(143,35,35), #eb7639);
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent;
+
+}
+
+.dettagli-film{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(163,67,67,1) 0%, rgba(0,0,0,1) 50%);
+    font-size: 1.25rem;
+}
+
+
+@media (min-width: 992px) {
+
+    .welcome h1{
+        font-size: 10rem;
+    }
+
+    .description h1{
+        font-size: 7rem;
+    }
+
+    nav li{
+        font-size: 1.2rem;
+        margin-left: 1.2rem;
+    }
+
+    .carosello{
+        height:auto;
+        width: 500px;
+        border: 0px solid #eb7639;
+        position: relative;
+    
+    }
+    .carosello img {
+        height: 600px;
+    }
+
+    .descrizione {
+        position: absolute;
+        top: -5%;
+        left: 100.6%;
+        height: 100%;
+        width: 400px;
+        z-index: 1;
+        background: rgba(55, 55, 55, 0.651);
+        color: white;
+        padding: 2.3rem;
+        display: none;
+    }
+    
+    @keyframes slideInLeft{
+        from{
+            transform: translateX(+150px);
+        }
+    
+        to{
+            transform: translate(0);
+        }
+    }
+    
+    .carosello:hover .descrizione {
+        display: block; 
+        animation: slideInLeft 1s;
+    }
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                                 PAGINA FILM                                */
+    /* -------------------------------------------------------------------------- */
+    .trama{
+        width: 100%;
+        text-align: justify;
+    }
+}
